@@ -1,4 +1,4 @@
-import {Routes,Route} from 'react-router-dom'
+import {Routes,Route,BrowserRouter,Navigate} from 'react-router-dom'
 
 import { SignIn } from '../pages/SignIn'
 
@@ -10,6 +10,7 @@ export function AuthRoutes(){
       <Route path='/' element={<SignIn/>}/>
       <Route path='/profile' element={<SignIn/>}/>
       <Route path='/register' element={<SignUp/>}/>
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   )
 }

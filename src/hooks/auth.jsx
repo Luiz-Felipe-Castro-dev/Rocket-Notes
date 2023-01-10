@@ -92,7 +92,7 @@ function AuthProvider({children}){
 
   )
 }
-
+//this is used to provide context to a page that needs it
 function useAuth(){
  const context = useContext(AuthContext);
 
